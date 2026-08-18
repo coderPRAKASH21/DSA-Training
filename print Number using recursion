@@ -1,0 +1,15 @@
+#include <stdio.h>
+void printNum(int i){
+    if(i>5){
+        return;
+    }
+    else{
+        printf("%d",i);
+        printNum(i+1);
+    }
+}
+int main() {
+    int i = 0;
+    printNum(i);
+    return 0;
+}
