@@ -1,0 +1,16 @@
+func str(name: String, len: Int) {
+    
+    if len < 0 {
+        return
+    } else {
+        let index = name.index(name.startIndex, offsetBy: len)
+        print(name[index], terminator: "")
+        
+        str(name: name, len: len - 1)
+    }
+}
+
+var name = "Prakash"
+var len = name.count
+
+str(name: name, len: len - 1)
