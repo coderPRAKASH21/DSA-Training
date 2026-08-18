@@ -1,0 +1,10 @@
+    if(n > range){
+        return
+    }else{
+        print(n)
+        printNumbers(range: range, n: n+1 )
+    }
+}
+var range : Int = 10
+var n: Int = 1
+printNumbers(range: range, n: n)
