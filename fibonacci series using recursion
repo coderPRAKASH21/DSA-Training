@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+void fibonacci(int i, int j,  int range){
+    if(range == 0)
+    {
+        return;
+    }
+    printf("%d ", i);
+    fibonacci(j, i + j, range - 1);
+}
+
+int main()
+{
+    int i = 0;
+    int range;
+    printf("How much elements do you want in series:");
+    scanf("%d",&range);
+    fibonacci(0,1,range);
+}
